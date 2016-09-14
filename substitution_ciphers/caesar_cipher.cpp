@@ -1,3 +1,10 @@
+/*
+Author : sac0(sachin govind)
+github : github.com/sac0
+
+*/
+
+
 #include <iostream>
 #include <string>
 using namespace std;
