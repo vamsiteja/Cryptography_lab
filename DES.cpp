@@ -442,13 +442,13 @@ int main () {
 
     memset(cipher, 0, sizeof(cipher));
     DesCipher(message, cipher, ENCRYPTION);
-    cout << "cipher: ";
+    cout << "Ciphertext: ";
     print_array_hex(cipher, 8);
 
     uchar_t decipher[8];
     memset(decipher, 0, sizeof(decipher));
     DesCipher(cipher, decipher, DECRYPTION);
-    cout << "decipher: ";
+    cout << "plaintext: ";
     print_array_hex(decipher, 8);
 
     return 0;

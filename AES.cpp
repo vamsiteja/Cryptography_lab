@@ -276,16 +276,17 @@ int main() {
 	KeyExpansion(key, word);
 
 	Cipher(text, enc, word);
-	printf("\nCipher: ");
+	printf("\nCiphertext: ");
 	for (int i=0; i < 16; i++) {
 		printf("%2x ", enc[i]);
 	}
 
 	Decipher(enc, dec, word);
-	printf("\nDecipher: ");
+	printf("\nplainetext: ");
 	for (int i=0; i < 16; i++) {
 		printf("%2x ", dec[i]);
 	}
+	printf("\n");
 
     return 0;
 }

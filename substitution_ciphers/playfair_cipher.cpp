@@ -61,12 +61,15 @@ string cipher(string s) {
 int main(int argc, char * argv[]) {
     string str, crypt="";
     fill_poly();
-    for (int i=0; i<5; i++) {
+    for (int i=0; i<5; i++) 
+    {
         for (int j=0; j<5; j++) 
         cout << poly[i][j] << " ";
         cout << "\n";
     }
+
     cout << "Enter string: ";
+
     getline(cin, str);
     for (int i=0; i<str.length()-1; i+=2) {
     if (str[i] == str[i+1]) {
