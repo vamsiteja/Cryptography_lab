@@ -89,10 +89,10 @@ int main()
 	cin>>A.x>>A.y;
 	cin>>B.x>>B.y;
 	point C = pointAddition(A, B);
-	cout<<"Result : "<<C.x<<" "<<C.y<<"endl";
+	cout<<C.x<<" "<<C.y<<endl;
 
 	//point Doubling
-	cout<<"Enter the points to double :";
+	cout<<"points to double :";
 	cin>>A.x>>A.y;
 	C = pointDoubling(A);
 	cout<<"Result : "<<C.x<<" "<<C.y<<"endl";
